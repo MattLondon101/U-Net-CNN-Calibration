@@ -12,3 +12,4 @@ for fileName in natsorted(os.listdir(src),alg=ns.PATH):
         im=cv.imread(filePath,0)
         nonzero = cv.countNonZero(im)
         
+# Calibration may involve further experimentation with these parameters
