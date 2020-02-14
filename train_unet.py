@@ -18,7 +18,7 @@ data_gen_args = dict(rotation_range=0.2,
 """
 # Training Images: 20 512*512 grayscale images
 # Training Labels: 20 512*512 binary (black and white (0,1)) images
-myGene = trainGenerator(20,'Path/to/Training/images/and/labels','ImageDir','LabelDir',data_gen_args,save_to_dir = None)
+myGene = trainGenerator(20,'Path/to/training/images/and/labels','ImageDir','LabelDir',data_gen_args,save_to_dir = None)
 model = unet()
 model_checkpoint = ModelCheckpoint('WeightsFile.hdf5', monitor='loss',verbose=1, save_best_only=True)
 model.fit_generator(myGene,steps_per_epoch=40,epochs=6,callbacks=[model_checkpoint])
