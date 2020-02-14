@@ -22,6 +22,9 @@ myGene = trainGenerator(20,'Path/to/train/images/and/labels','ImageDir','LabelDi
 model = unet()
 model_checkpoint = ModelCheckpoint('WeightsFile.hdf5', monitor='loss',verbose=1, save_best_only=True)
 model.fit_generator(myGene,steps_per_epoch=40,epochs=6,callbacks=[model_checkpoint])
+# steps_per_epoch=40,epochs=6 were determined to be the best parameters for accuracy and time
+# 20 images and 20 labels were the ideal dataset size for these parameters
+# Calibration may involve further experimentation with these parameters
 
 # prints total training time at end
 print('Training tool {} seconds'.format(time.time()-start_time))
