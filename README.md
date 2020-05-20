@@ -16,7 +16,7 @@ Total - TP = False Positive (FP)
 PPV determines accuracy of predictions.
 Positive Predictive Value (PPV) = PPV = TP/(TP+FP)
 
-**Calibration**
+## **Calibration** 
 With the settings of 40 steps-per-epoch and 60 epochs (in train_unet.py) accuracy and reliability across subjects is nearly 100% on 4th run. There is a particular cycle that accuracy and reliability follows before and after the 4th run. Yet, the data regarding this is still being prepared for publication and will not be made public until at least 2021. But, each run only takes no more than an hour. So see what you can find!
 
 
