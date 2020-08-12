@@ -17,6 +17,5 @@ PPV determines accuracy of predictions.
 Positive Predictive Value (PPV) = PPV = TP/(TP+FP)
 
 ## **Calibration** 
-With the settings of 40 steps-per-epoch and 60 epochs (in train_unet.py) accuracy and reliability across subjects is nearly 100% on 4th run. There is a particular cycle that accuracy and reliability follows before and after the 4th run. Yet, the data regarding this is still being prepared for publication and will not be made public until at least 2021. But, each run only takes no more than an hour. So see what you can find!
-
+With the settings of 40 steps-per-epoch and 60 epochs (in train_unet.py) and without updating the .hdf5 weights file, accuracy and reliability across subjects fluctuated from across runs. The pattern exhibited was PPV < 0.4 on the 1st and 3rd runs, PPV between 0.5 - 0.9 on the 2nd run, and PPV between 0.9-1.0 on the 4th run. PPV declined at a rate of -0.3/run after the 4th run. Thus, with an unchanged weights file/model, the 4th run is the most accurate and reliable for U-Net predictions.
 
