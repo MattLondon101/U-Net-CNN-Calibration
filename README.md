@@ -4,6 +4,8 @@ Code was initially run in Spyder (Python 3.7) on ASUS ROG GU502GV laptop with a 
 Dependencies:
 Python 3 (code has only been tested in Spyder (Python 3.7) in Anaconda 3) on PC
 
+Use Tensorflow 1 (e.g. Tensorflow 1.15.0) because Tensorflow 2 is trouble.
+
 All other dependencies found in import.py
 
 Fiji/ImageJ:
